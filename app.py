@@ -12,15 +12,18 @@ app.config.update(
 # def hello():
 #     return "Hello from Python!"
 
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/')
+# #@app.route('/', methods=['POST', 'GET'])
 def index():
-    if request.method == 'POST':
-        uu = Upload()
-        for inputName in request.files:
-            for upload in request.files.getlist(inputName):
-                app.logger.debug(secure_filename(upload.filename))
-                upload.save(os.path.join('/tmp/demo', secure_filename(upload.filename)))
+    # if request.method == 'POST':
+    #     uu = Upload()
+    #     for inputName in request.files:
+    #         for upload in request.files.getlist(inputName):
+    #             app.logger.debug(secure_filename(upload.filename))
+    #             upload.save(os.path.join('/tmp/demo', secure_filename(upload.filename)))
     return render_template('templates/index.html')
+
+
 
 # launch
 if __name__ == "__main__":
