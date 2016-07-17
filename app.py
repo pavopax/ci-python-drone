@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, request, render_template
 
 # initialization
 app = Flask(__name__)
@@ -8,9 +8,19 @@ app.config.update(
 )
 
 # controllers
-@app.route("/")
-def hello():
-    return "Hello from Python!"
+# @app.route("/")
+# def hello():
+#     return "Hello from Python!"
+
+@app.route('/', methods=['POST', 'GET'])
+def index():
+    if request.method == 'POST':
+        uu = Upload()
+        for inputName in request.files:
+            for upload in request.files.getlist(inputName):
+                app.logger.debug(secure_filename(upload.filename))
+                upload.save(os.path.join('/tmp/demo', secure_filename(upload.filename)))
+    return render_template('index.html', name='YOHO')
 
 # launch
 if __name__ == "__main__":
