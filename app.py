@@ -20,7 +20,7 @@ def index():
             for upload in request.files.getlist(inputName):
                 app.logger.debug(secure_filename(upload.filename))
                 upload.save(os.path.join('/tmp/demo', secure_filename(upload.filename)))
-    return render_template('index.html', name='YOHO')
+    return render_template('templates/index.html', name='YOHO')
 
 # launch
 if __name__ == "__main__":
