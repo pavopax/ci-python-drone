@@ -2,10 +2,10 @@ import os
 from flask import Flask, request, redirect, url_for, send_from_directory
 from werkzeug.utils import secure_filename
 
-UPLOAD_FOLDER = '/tmp'
-# ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
-# initialization
+UPLOAD_FOLDER = '/tmp'
+
+
 app = Flask(__name__)
 app.config.update(
     DEBUG = True,
@@ -45,7 +45,6 @@ def upload_file():
     '''
 
 
-# launch
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
