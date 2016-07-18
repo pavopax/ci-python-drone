@@ -1,5 +1,7 @@
 Continuous integration with Drone using Docker
 ===============================================================================
+[![Build Status](http://192.241.144.155:8080/api/badge/github.com/pavopax/ci-python-drone/status.svg?branch=master)](http://192.241.144.155:8080/github.com/pavopax/ci-python-drone)
+
 Goal: Set up continuous integration testing of a Python app
 
 CI server is set up on DigitalOcean (Ubuntu) using Docker
@@ -13,6 +15,7 @@ The CI tests to be ran are in `/picr/picr_tests.py`. This command appears in `.d
 Instructions
 ===============================================================================
 Its easiest if you perform these steps on the DO box. Step 1 can be done locally, however.
+
 
 (1)  
 `sh deploy-heroku.sh`
@@ -60,7 +63,7 @@ Add scripts to test under `script` in `.drone.yml`
 
 
 
-References
+References 
 ===============================================================================
 ## Drone
 https://www.digitalocean.com/community/tutorials/how-to-perform-continuous-integration-testing-with-drone-io-on-coreos-and-docker
