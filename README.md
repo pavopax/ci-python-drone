@@ -19,7 +19,6 @@ Prepare Github access by following
 
 
 
-
 /root/droneio/drone.sqlite
 
 
