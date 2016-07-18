@@ -1,5 +1,7 @@
 Continuous integration with Drone using Docker
 ===============================================================================
+[![Build Status](http://192.241.144.155:8080/api/badge/github.com/pavopax/ci-python-drone/status.svg?branch=master)](http://192.241.144.155:8080/github.com/pavopax/ci-python-drone)
+
 Goal: Set up continuous integration testing of a Python app
 
 CI server is set up on DigitalOcean (Ubuntu) using Docker
