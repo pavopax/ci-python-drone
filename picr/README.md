@@ -7,7 +7,7 @@ Deployed to `heroku` at [http://picr-test.herokuapp.com](http://picr-test.heroku
 Manual steps to deploy this app are below. See  `../README.md` for an automatic script.
 
 
-Installation
+Manul Installation
 ===============================================================================
 Based on http://blog.shea.io/lightweight-python-apps-with-flask-twitter-bootstrap-and-heroku/
 

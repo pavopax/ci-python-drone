@@ -29,17 +29,17 @@ Prepare Github access for drone.io deployment by following
 [Step One on this link](https://www.digitalocean.com/community/tutorials/how-to-perform-continuous-integration-testing-with-drone-io-on-coreos-and-docker#step-one-—-prepare-github).
 
 (4)  
-Update oAuth keys in `Dockerfile` from (3)
+`cd droneio`
 
 (5)  
-`cd droneio`
+Update oAuth keys in `Dockerfile` from (3)
 
 (6)   
 Verify that you are in this directory: `/root/droneio/`. Otherwise, edit
 this path in `script.sh`
 
 (7)  
-`sh script.sh`
+`sh deploy-tests.sh`
 
 Deploy drone.io task with docker. Check that it's running with
 `docker ps`. Troubleshoot
