@@ -21,9 +21,10 @@ class PicrTestCase(unittest.TestCase):
         assert 'Upload new File' in rv.data
 
     def test_upload(self):
-        #data = (io.BytesIO(b"abcdef"), 'test.jpg')
-        rv = self.app.post('/')
+        data = dict(file=(io.BytesIO(b"xkcd"), 'test.jpg'))
+        rv = self.app.post('/', data=data, follow_redirects=True)
         assert 'Upload new File' not in rv.data
+        assert b"xkcd" in rv.data
 
 
 if __name__ == '__main__':
