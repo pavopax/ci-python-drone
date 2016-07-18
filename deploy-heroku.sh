@@ -16,4 +16,4 @@ git push heroku master
 
 heroku open
 
-echo "DONE"
+echo "DONE."
