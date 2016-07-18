@@ -1,4 +1,5 @@
 import os
+import io
 import picr
 import unittest
 import tempfile
@@ -15,9 +16,14 @@ class PicrTestCase(unittest.TestCase):
         os.unlink(picr.app.config['DATABASE'])
 
     # sample test that passes
-    def test_empty_db(self):
+    def test_root(self):
         rv = self.app.get('/')
         assert 'Upload new File' in rv.data
+
+    def test_upload(self):
+        #data = (io.BytesIO(b"abcdef"), 'test.jpg')
+        rv = self.app.post('/')
+        assert 'Upload new File' not in rv.data
 
 
 if __name__ == '__main__':
