@@ -18,7 +18,6 @@ Prepare Github access by following
 [Step One on this link](https://www.digitalocean.com/community/tutorials/how-to-perform-continuous-integration-testing-with-drone-io-on-coreos-and-docker#step-one-—-prepare-github).
 
 
-
 /root/droneio/drone.sqlite
 
 
