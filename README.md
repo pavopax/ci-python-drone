@@ -11,6 +11,12 @@ Reference Flask app: `picr`: upload a pic and return it, using a simple Python/F
 
 References
 ===============================================================================
+
+## Drone
 https://www.digitalocean.com/community/tutorials/how-to-perform-continuous-integration-testing-with-drone-io-on-coreos-and-docker
 
+## Flask
+http://blog.shea.io/lightweight-python-apps-with-flask-twitter-bootstrap-and-heroku/
 http://flask.pocoo.org/docs/0.10/testing/
+
+
