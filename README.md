@@ -51,8 +51,8 @@ Visit [http://YOUR_DROPLET_IP:8080/login](http://YOUR_DROPLET_IP:8080/login)
 and activate the repo from (2)
 
 (9)
-You can now run builds by pushing to the repo from (2). Docker will build the
-image specified in `.drone.yml` and will run the commands under `script:`
+You can now run builds by pushing to the repo from (2). Docker will use the
+image and run the commands specified in `.drone.yml`
 
 Note: `node` image includes git. An alternative image is `nginx`.
 
