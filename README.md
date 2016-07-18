@@ -14,6 +14,8 @@ The CI tests to be ran are in `/picr/picr_tests.py`
 
 Installation of the CI server on DO
 ===============================================================================
+[working]
+
 Create a repo with the files in `/picr`. See [its README](/picr/README.md) to deploy it to heroku.
 
 Prepare Github access by following
