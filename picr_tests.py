@@ -14,9 +14,11 @@ class PicrTestCase(unittest.TestCase):
         os.close(self.db_fd)
         os.unlink(picr.app.config['DATABASE'])
 
+    # sample test that passes
     def test_empty_db(self):
         rv = self.app.get('/')
         assert 'Upload new File' in rv.data
+
 
 if __name__ == '__main__':
     unittest.main()
