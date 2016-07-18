@@ -1,5 +1,5 @@
 image: node
 script:
-  - pip install flask
+  - sudo pip install flask
   - python picr_tests.py 
   
