@@ -2,9 +2,9 @@ Picr
 ===============================================================================
 A Python/Flask app: upload a pic, and magically return it
 
-Deployed to `heroku` at `http://picr-test.herokuapp.com`
+Deployed to `heroku` at [http://picr-test.herokuapp.com](http://picr-test.herokuapp.com)
 
-See [installation](#installation) below, and  `../README.md` for details.
+Manual steps to deploy this app are below. See  `../README.md` for an automatic script.
 
 
 Installation
