@@ -1,4 +1,4 @@
-image: dockerfile/nginx
+image: Dockerfile/nginx
 script:
   - echo hello world
   
