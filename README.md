@@ -14,7 +14,7 @@ The CI tests to be ran are in `/picr/picr_tests.py`. This command appears in `.d
 
 Instructions
 ===============================================================================
-Its easiest if you perform these steps on the DO box. Step 1 can be done locally, however.
+It's easiest if you perform these steps on the DO box. Step 1 can be done locally, however.
 
 
 (1)  
